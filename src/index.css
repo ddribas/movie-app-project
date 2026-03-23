@@ -14,8 +14,9 @@
   --primary-bg-color: #1F1F29;
   --secondary-bg-color: #131316;
 
-  --primary-txt-color: #FFFFFF;
-  --secondary-txt-color: #FF0000BA;
+  --primary-text-color: #FFFFFF;
+  --secondary-text-color:#575B66;
+  --terciary-text-color: #FF0000BA;
 
   --primary-icon-color: #B9C1D9;
   --secondary-icon-color: #E2E2E200;
