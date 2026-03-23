@@ -13,9 +13,15 @@
  * 
  */
 
+import Searchbar from "@/components/Searchbar/Searchbar";
+
 
 function Home() {
-    return <p>Hello World!</p>
+    return (
+        <>
+            <Searchbar />
+        </>
+    )
 }
 
 export default Home;
