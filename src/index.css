@@ -10,6 +10,22 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primary-bg-color: #1F1F29;
+  --secondary-bg-color: #131316;
+
+  --primary-txt-color: #FFFFFF;
+  --secondary-txt-color: #FF0000BA;
+
+  --primary-icon-color: #B9C1D9;
+  --secondary-icon-color: #E2E2E200;
+  --terciary-icon-color: #FF0000E0;
+
+  --primary-button-color: #3A21D9;
+  --secondary-button-color: #515053;
+  --terciary-button-color: #F5C518;
+
+  --primary-chip-color: #312F35;
 }
 
 #root {
