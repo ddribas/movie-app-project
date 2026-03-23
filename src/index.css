@@ -1,10 +1,7 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Inter";
   line-height: 1.5;
   font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(253, 252, 253);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -47,7 +44,12 @@ body {
   min-height: 100vh;
 }
 
+:root {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+}
 @media (prefers-color-scheme: light) {
+  
 }
 
 @media (min-width: 430px) {

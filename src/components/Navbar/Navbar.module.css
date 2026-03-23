@@ -1,0 +1,12 @@
+.img-container {
+    height: 40px;
+    width: 40px;
+    border: 1px solid var(--primary-chip-color);
+    border-radius: 37px;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: stretch;
+    overflow: hidden;
+}
