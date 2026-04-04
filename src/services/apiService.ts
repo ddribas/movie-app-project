@@ -10,8 +10,51 @@ export const getMoviesPopular = async (page: number = 1) => {
             Authorization: bearerToken
         }
     };
+    
+    try {
+        const res = await fetch(url, options);
+        const json = await res.json();
+        return json;
+    } catch (error) {
+        return false;
+    }
+};
 
-    const res = await fetch(url, options);
-    const json = await res.json();
-    return json;
+export const getTVSeriesPopular = async (page: number = 1) => {
+    const url = `${BASE_URL}/tv/popular?language=en-US&page=${page}`
+    const options = {
+        method: 'GET',
+        headers: {
+            accept: 'application/json',
+            Authorization: bearerToken
+        }
+    };
+
+    try {
+        const res = await fetch(url, options);
+        const json = await res.json();
+        return json;
+    } catch (error) {
+        return false;
+    }
+};
+
+//unsure if used yet
+export const getTrending = async () => {
+    const url = `${BASE_URL}/trending/all/day?language=en-US`
+    const options = {
+        method: 'GET',
+        headers: {
+            accept: 'application/json',
+            Authorization: bearerToken
+        }
+    };
+
+    try {
+        const res = await fetch(url, options);
+        const json = await res.json();
+        return json;
+    } catch (error) {
+        return false;
+    }
 };

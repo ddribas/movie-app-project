@@ -12,6 +12,14 @@ createRoot(document.getElementById('root')!).render(
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/movies">
+            <Route index  element={<Home />} />
+            <Route path=":id" element={<Home />} />
+          </Route>
+          <Route path="/series">
+            <Route index  element={<Home />} />
+            <Route path=":id" element={<Home />} />
+          </Route>
         </Routes>
       </Layout>
     </BrowserRouter>

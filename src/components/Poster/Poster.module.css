@@ -1,0 +1,9 @@
+.starOverlap {
+    position: relative;
+}
+
+.starOverlap svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
