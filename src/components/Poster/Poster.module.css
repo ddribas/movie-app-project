@@ -3,20 +3,21 @@
     width: 250px;
 }
 
-.poster p {
-    height: 2rem;
-    margin-bottom: 26px;
+.posterTitle {
+    height: 4rem;
+    padding-bottom: 26px;
 }
 
 .poster a {
     color: inherit;
     text-decoration: none;
+    height: stretch;
 }
 
 .poster img {
     height: 300px;
     width: 200px;
-    border-radius:8px;
+    border-radius:12px;
 }
 
 .stars {
@@ -25,7 +26,6 @@
     justify-content: center;
     color: #FFFF00;
     fill: #FFFF00;
-    left: 20px;
 }
 
 .starOverlap {

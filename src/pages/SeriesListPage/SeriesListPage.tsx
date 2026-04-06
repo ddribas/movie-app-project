@@ -57,7 +57,7 @@ function SeriesListPage () {
                     <section className={styles.serieList}>
                         {series.results.map((serie, index) => {
                             if (!instanceOfMovie(serie)) {
-                                return <Poster key={index} type="series" id={serie.id} title={serie.name} rating={serie.vote_average} poster={serie.poster_path}  />
+                                return <Poster key={index} type="series" id={serie.id} title={serie.name} date={serie.first_air_date} rating={serie.vote_average} poster={serie.poster_path}  />
                             }
                         } )}
                     </section>

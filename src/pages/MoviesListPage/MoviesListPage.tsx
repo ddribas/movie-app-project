@@ -57,7 +57,7 @@ function MoviesListPage () {
                     <section className={styles.movieList}>
                         {movies.results.map((movie, index) => {
                             if (instanceOfMovie(movie)) {
-                                return <div className={styles.listChild}><Poster key={index} type="movies" id={movie.id} title={movie.title} rating={movie.vote_average} poster={movie.poster_path}  /></div>
+                                return <div className={styles.listChild}><Poster key={index} type="movies" id={movie.id} title={movie.title} date={movie.release_date} rating={movie.vote_average} poster={movie.poster_path}  /></div>
                             }
                         } )}
                     </section>

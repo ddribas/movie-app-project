@@ -8,11 +8,13 @@ import "@fontsource/inter";
 import MoviesListPage from './pages/MoviesListPage/MoviesListPage.tsx'
 import SeriesListPage from './pages/SeriesListPage/SeriesListPage.tsx'
 import DetailsPage from './pages/DetailsPage/DetailsPage.tsx'
+import Footer from './components/Footer/Footer.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <Layout>
+        <Footer>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/movies">
@@ -24,6 +26,7 @@ createRoot(document.getElementById('root')!).render(
             <Route path=":id" element={<DetailsPage />} />
           </Route>
         </Routes>
+        </Footer>
       </Layout>
     </BrowserRouter>
   </StrictMode>,

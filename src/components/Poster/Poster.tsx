@@ -2,15 +2,16 @@ import { Star, StarHalf } from "lucide-react";
 import styles from './Poster.module.css';
 import { Link } from "react-router";
 
-interface Poster {
+interface IPoster {
     id: number;
     type: "movies" | "series";
     title: string;
+    date: string;
     rating: number;
     poster: string;
 }
 
-function Poster ({ id, type, title, rating, poster } : Poster) {
+function Poster ({ id, type, title, date, rating, poster } : IPoster) {
 
     const trimmedRating = rating / 2;
     const halfStar = (trimmedRating % 2);
@@ -21,7 +22,10 @@ function Poster ({ id, type, title, rating, poster } : Poster) {
         <div className={styles.poster}>
             <Link to={`/${type}/${id}`} className={styles.poster}>
                 <img src={`https://image.tmdb.org/t/p/w500/${poster}`}/>
-                <p>{title}</p>
+                <div className={styles.posterTitle}>
+                    <p>{title}</p>
+                    <p>{date.split('-')[0]}</p>
+                </div>
                 <div className={styles.stars}>
                     {(trimmedRating >= 1) ? 
                         <Star fill="true"  /> : 
