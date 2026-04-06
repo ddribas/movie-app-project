@@ -20,8 +20,46 @@ export const getMoviesPopular = async (page: number = 1) => {
     }
 };
 
+export const getMovieGenre = async () => {
+    const url = `${BASE_URL}/genre/movie/list?language=en`
+    const options = {
+        method: 'GET',
+        headers: {
+            accept: 'application/json',
+            Authorization: bearerToken
+        }
+    };
+
+    try {
+        const res = await fetch(url, options);
+        const json = await res.json();
+        return json;
+    } catch (error) {
+        return false;
+    }
+};
+
 export const getTVSeriesPopular = async (page: number = 1) => {
     const url = `${BASE_URL}/tv/popular?language=en-US&page=${page}`
+    const options = {
+        method: 'GET',
+        headers: {
+            accept: 'application/json',
+            Authorization: bearerToken
+        }
+    };
+
+    try {
+        const res = await fetch(url, options);
+        const json = await res.json();
+        return json;
+    } catch (error) {
+        return false;
+    }
+};
+
+export const getSeriesGenre = async () => {
+    const url = `${BASE_URL}/genre/tv/list?language=en`
     const options = {
         method: 'GET',
         headers: {
@@ -58,3 +96,4 @@ export const getTrending = async () => {
         return false;
     }
 };
+

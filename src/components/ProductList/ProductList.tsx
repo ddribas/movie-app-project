@@ -3,6 +3,8 @@ import type { Series } from "@/types/series";
 import { ArrowRight } from "lucide-react";
 import Poster from "../Poster/Poster";
 import styles from './ProductList.module.css';
+import { instanceOfMovie } from "@/utils/instance";
+import { Link } from "react-router";
 
 interface list {
     title: string;
@@ -12,10 +14,10 @@ interface list {
 function ProductList ({ title, data } : list) {
     return (
         <section className={styles.listSection}>
-            <div className={styles.listHeader}>
+            <Link to={`/${title.toLowerCase()}`} className={styles.listHeader}>
                 <h2>{title}</h2>
                 <ArrowRight />
-            </div>
+            </Link>
             <div className={styles.listColumn}>
                 {data.results.map((product, index) => {
                     if (instanceOfMovie(product)) {
@@ -32,6 +34,3 @@ function ProductList ({ title, data } : list) {
 export default ProductList;
 
 
-function instanceOfMovie(object: any): object is Movie {
-    return 'title' in object;
-}
