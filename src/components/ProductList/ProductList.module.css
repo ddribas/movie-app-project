@@ -21,9 +21,11 @@
 .listColumn {
     width: 100%;
     height: stretch;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 1fr;
-    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     overflow-y: hidden;
+    gap: 16px;
 }

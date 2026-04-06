@@ -82,7 +82,7 @@ function DetailsPage () {
                             <h1>{(instanceOfMovieDetails(data)) ? data.title : data.name}</h1>
                             <p>{data.overview}</p>
                         </div>
-                        {credits && (<><CastList title='Actors' data={credits.cast} /><CastList title='Crew'  data={credits.crew} /></>)}
+                        {credits && (<>{(credits.cast.length > 0) && (<CastList title='Actors' data={credits.cast} />)}{(credits.crew.length > 0) && (<CastList title='Crew'  data={credits.crew} />)}</>)}
                         
                         {(instanceOfMovieDetails(data)) &&  (
                             <div className={styles.imdb} onClick={() => window.open(`https://www.imdb.com/title/${data.imdb_id}/`, "_blank")}>
