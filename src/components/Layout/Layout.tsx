@@ -3,7 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import { useLocation } from "react-router";
 
 function Layout ({ children } : { children: ReactNode}) {
-    const routes = ["/", "/movies", "/tv"];
+    const routes = ["/", "/movies", "/series"];
     const { pathname } = useLocation();
     const showNavbar = routes.includes(pathname);
 

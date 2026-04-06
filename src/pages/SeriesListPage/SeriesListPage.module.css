@@ -1,0 +1,27 @@
+.serieList {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    row-gap: 24px;
+    margin-top: 24px;
+}
+
+.genreList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+    margin: 24px 0;
+}
+
+.pageSelection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+    margin: 36px 0;
+}

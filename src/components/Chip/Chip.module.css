@@ -1,0 +1,27 @@
+.chip {
+    font-weight: bold;
+    width: fit-content;
+    border: 0 solid;
+    border-radius: 10px;
+    height: 35px;
+    padding: 3px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.primary {
+    background-color: var(--secondary-button-color);
+}
+
+.primary:hover {
+    background-color: var(--primary-chip-color);
+}
+
+.selected {
+    background-color: var(--primary-button-color);
+}
+
+.secondary {
+    background-color: var(--primary-chip-color);
+}
+

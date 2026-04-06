@@ -20,6 +20,25 @@ export const getMoviesPopular = async (page: number = 1) => {
     }
 };
 
+export const getDiscoverMovie = async (page: number = 1, genre: number = 0) => {
+    const url = (genre) ? `${BASE_URL}/discover/movie?page=${page}&with_genres=${genre}` : `${BASE_URL}/discover/movie?&page=${page}`;
+    const options = {
+        method: 'GET',
+        headers: {
+            accept: 'application/json',
+            Authorization: bearerToken
+        }
+    };
+    
+    try {
+        const res = await fetch(url, options);
+        const json = await res.json();
+        return json;
+    } catch (error) {
+        return false;
+    }
+};
+
 export const getMovieGenre = async () => {
     const url = `${BASE_URL}/genre/movie/list?language=en`
     const options = {
@@ -49,6 +68,25 @@ export const getTVSeriesPopular = async (page: number = 1) => {
         }
     };
 
+    try {
+        const res = await fetch(url, options);
+        const json = await res.json();
+        return json;
+    } catch (error) {
+        return false;
+    }
+};
+
+export const getDiscoverSeries = async (page: number = 1, genre: number = 0) => {
+    const url = (genre) ? `${BASE_URL}/discover/tv?page=${page}&with_genres=${genre}` : `${BASE_URL}/discover/tv?&page=${page}`;
+    const options = {
+        method: 'GET',
+        headers: {
+            accept: 'application/json',
+            Authorization: bearerToken
+        }
+    };
+    
     try {
         const res = await fetch(url, options);
         const json = await res.json();
