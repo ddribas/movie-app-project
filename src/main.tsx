@@ -15,17 +15,17 @@ createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Layout>
         <Footer>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/movies">
-            <Route index  element={<MoviesListPage />} />
-            <Route path=":id" element={<DetailsPage />} />
-          </Route>
-          <Route path="/series">
-            <Route index  element={<SeriesListPage />} />
-            <Route path=":id" element={<DetailsPage />} />
-          </Route>
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/movies">
+              <Route index  element={<MoviesListPage />} />
+              <Route path=":id" element={<DetailsPage />} />
+            </Route>
+            <Route path="/series">
+              <Route index  element={<SeriesListPage />} />
+              <Route path=":id" element={<DetailsPage />} />
+            </Route>
+          </Routes>
         </Footer>
       </Layout>
     </BrowserRouter>

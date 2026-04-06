@@ -82,6 +82,10 @@
     margin: 24px;
 }
 
+.description h1 {
+    font-weight: bold;
+}
+
 .imdb{
     display: flex;
     flex-direction: column;
