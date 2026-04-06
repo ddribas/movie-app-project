@@ -44,35 +44,12 @@ function Home() {
             (
                 <>
                     <ProductList title="Movies" data={movies} />
+                    <ProductList title="Series" data={series} />
                 </>
             )}   
         </>
            
     );
-
-
-/*
-    if (loading) {
-        return (
-            <>
-                <Searchbar />
-                <Spinner />
-            </>
-        );
-    } else if (movies && series) {
-        console.log("hey")
-        return    <>
-                <Searchbar />
-                <ProductList title="Movies" data={movies} />
-            </>
-    } else {
-        return (
-            <>
-                <Searchbar />
-                <Spinner />
-            </>
-        );
-    }*/
 }
 
 export default Home;
