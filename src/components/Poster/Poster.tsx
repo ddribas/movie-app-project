@@ -14,45 +14,46 @@ function Poster ({ id, type, title, rating, poster } : Poster) {
 
     const trimmedRating = rating / 2;
     const halfStar = (trimmedRating % 2);
+    const ratingInt = Math.ceil(trimmedRating);
     
 
     return(
-        <div>
-            <Link to={`/${type}/${id}`}>
+        <div className={styles.poster}>
+            <Link to={`/${type}/${id}`} className={styles.poster}>
                 <img src={`https://image.tmdb.org/t/p/w500/${poster}`}/>
                 <p>{title}</p>
-                <div>
+                <div className={styles.stars}>
                     {(trimmedRating >= 1) ? 
                         <Star fill="true"  /> : 
-                        ((halfStar) ? <div className={styles.starOverlap} >
+                        ((halfStar && ratingInt === 1) ? <div className={styles.starOverlap} >
                             <Star  />
                             <StarHalf fill="true" />
                         </div> : <Star  />)
                     }
                     {(trimmedRating >= 2) ? 
                         <Star fill="true"  /> : 
-                        ((halfStar) ? <div className={styles.starOverlap} >
+                        ((halfStar && ratingInt === 2) ? <div className={styles.starOverlap} >
                             <Star  />
                             <StarHalf fill="true" />
                         </div> : <Star  />)
                     }
                     {(trimmedRating >= 3) ? 
                         <Star fill="true"  /> : 
-                        ((halfStar) ? <div className={styles.starOverlap} >
+                        ((halfStar && ratingInt === 3) ? <div className={styles.starOverlap} >
                             <Star  />
                             <StarHalf fill="true" />
                         </div> : <Star  />)
                     }
                     {(trimmedRating >= 4) ? 
                         <Star fill="true"  /> : 
-                        ((halfStar) ? <div className={styles.starOverlap} >
+                        ((halfStar && ratingInt === 4) ? <div className={styles.starOverlap} >
                             <Star  />
                             <StarHalf fill="true" />
                         </div> : <Star  />)
                     }
                     {(trimmedRating >= 5) ? 
                         <Star fill="true"  /> : 
-                        ((halfStar) ? <div className={styles.starOverlap} >
+                        ((halfStar && ratingInt === 5) ? <div className={styles.starOverlap} >
                             <Star  />
                             <StarHalf fill="true" />
                         </div> : <Star  />)

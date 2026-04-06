@@ -2,6 +2,7 @@ import type { Movie, Movies } from "@/types/movies";
 import type { Series } from "@/types/series";
 import { ArrowRight } from "lucide-react";
 import Poster from "../Poster/Poster";
+import styles from './ProductList.module.css';
 
 interface list {
     title: string;
@@ -10,12 +11,12 @@ interface list {
 
 function ProductList ({ title, data } : list) {
     return (
-        <section>
-            <div>
+        <section className={styles.listSection}>
+            <div className={styles.listHeader}>
                 <h2>{title}</h2>
                 <ArrowRight />
             </div>
-            <div>
+            <div className={styles.listColumn}>
                 {data.results.map((product, index) => {
                     if (instanceOfMovie(product)) {
                         return <Poster key={index} type="movies" id={product.id} title={product.title} rating={product.vote_average} poster={product.poster_path}  />

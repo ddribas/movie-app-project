@@ -1,3 +1,27 @@
+.poster {
+    height: 400px;
+    width: 250px;
+}
+
+.poster a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.poster img {
+    height: 300px;
+    width: 200px;
+    border-radius:8px;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #FFFF00;
+    fill: #FFFF00;
+}
+
 .starOverlap {
     position: relative;
 }

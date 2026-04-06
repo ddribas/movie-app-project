@@ -1,0 +1,27 @@
+.listSection {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    height: 500px;
+    margin: 24px;
+}
+
+.listHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: stretch;
+    align-items: center;
+}
+
+.listColumn {
+    width: 100%;
+    height: stretch;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
