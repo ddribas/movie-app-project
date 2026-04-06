@@ -1,4 +1,4 @@
-import type { Movie, Movies } from "@/types/movies";
+import type { Movies } from "@/types/movies";
 import type { Series } from "@/types/series";
 import { ArrowRight } from "lucide-react";
 import Poster from "../Poster/Poster";

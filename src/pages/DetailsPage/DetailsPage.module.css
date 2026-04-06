@@ -1,0 +1,90 @@
+.backDropSection {
+    width: stretch;
+    height: 40%;
+}
+
+.backDropSection img {
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.backdropIcons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 12px 24px;
+}
+
+.backdropIcons svg {
+    display: flex;
+    height: 28px;
+    width: 28px;
+    align-items: center;
+    align-content: center;
+}
+
+.backDropSection p {
+    display: flex;
+    height: stretch;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    margin-right: 24px;
+}
+
+.breakpoint {
+    position: relative;
+    z-index: 1;
+    height: 10%;
+    background: linear-gradient(to bottom, transparent 50%, var(--primary-bg-color) 100% );
+}
+
+.infoSection {
+    position: relative;
+    z-index: 1;
+    height: stretch;
+    background-color: var(--primary-bg-color);
+}
+
+.chipSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.chips {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 8px;
+}
+
+.chips svg {
+    color: #FFFF00;
+    fill: #FFFF00;
+}
+
+.heart {
+    margin: 12px;
+    color: var(--terciary-icon-color);
+    fill: var(--terciary-icon-color);
+}
+
+.description {
+    text-align: justify;
+    margin: 24px;
+}
+
+.imdb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}

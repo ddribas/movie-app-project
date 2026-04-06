@@ -1,0 +1,12 @@
+.avatar {
+    width: stretch;
+    height: 100px;
+    margin: 16px;
+}
+
+.avatar img {
+    width: 150px;
+    height: 225px;
+    object-fit: contain;
+    border-radius: 15px;
+}
