@@ -21,7 +21,7 @@ function Poster ({ id, type, title, date, rating, poster } : IPoster) {
     return(
         <div className={styles.poster}>
             <Link to={`/${type}/${id}`} className={styles.poster}>
-                <img src={`https://image.tmdb.org/t/p/w500/${poster}`}/>
+                <img src={`https://image.tmdb.org/t/p/w500/${poster}`} alt={title}/>
                 <div className={styles.posterTitle}>
                     <p>{title}</p>
                     <p>{date.split('-')[0]}</p>

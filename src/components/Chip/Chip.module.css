@@ -25,3 +25,7 @@
     background-color: var(--primary-chip-color);
 }
 
+.terciary {
+    background-color: var(--terciary-button-color);
+}
+

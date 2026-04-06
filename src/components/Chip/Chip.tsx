@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import styles from "./Chip.module.css";
 
 interface IChip {
-    variant: "primary" | "secondary" | "selected",
+    variant: "primary" | "secondary" | "terciary" | "selected",
     state: "active" | "inactive"
     children: ReactNode
 }
