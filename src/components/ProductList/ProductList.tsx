@@ -21,9 +21,9 @@ function ProductList ({ title, data } : list) {
             <div className={styles.listColumn}>
                 {data.results.map((product, index) => {
                     if (instanceOfMovie(product)) {
-                        return <Poster key={index} type="movies" id={product.id} title={product.title} rating={product.vote_average} poster={product.poster_path}  />
+                        return <Poster key={index} type="movies" id={product.id} title={product.title} date={product.release_date} rating={product.vote_average} poster={product.poster_path}  />
                     } else {
-                        return <Poster key={index} type="series" id={product.id} title={product.name} rating={product.vote_average} poster={product.poster_path} />
+                        return <Poster key={index} type="series" id={product.id} title={product.name} date={product.first_air_date} rating={product.vote_average} poster={product.poster_path} />
                     }
                 } )}
             </div>
