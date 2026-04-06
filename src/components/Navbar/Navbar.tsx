@@ -1,20 +1,3 @@
-/**
- *  Left to Right
- * 
- *  Logged In:
- *  
- *  - User Avatar
- * 
- *  - User Name + welcome back
- * 
- *  - Settings menu
- * 
- * 
- *  Extra Developments:
- *  - setup simple login system with providers 
- * 
- */
-
 import { ArrowLeft, CircleEllipsis } from "lucide-react";
 import styles from './Navbar.module.css';
 import { useLocation, useNavigate } from "react-router";

@@ -47,9 +47,3 @@ body {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
 }
-@media (prefers-color-scheme: light) {
-  
-}
-
-@media (min-width: 430px) {
-}

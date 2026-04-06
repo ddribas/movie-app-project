@@ -1,18 +1,3 @@
-/**
- * NavBar
- * 
- * SearchBar
- * 
- * Carrousel
- * 
- * MyList
- * 
- * Recommended 
- * 
- * If Recommended or MyList are selected change into each respectively
- * 
- */
-
 import Searchbar from "@/components/Searchbar/Searchbar";
 import Spinner from "@/components/Spinner/Spinner";
 import ProductList from "@/components/ProductList/ProductList";

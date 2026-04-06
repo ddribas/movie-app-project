@@ -210,7 +210,7 @@ export const getSeriesGenre = async () => {
     }
 };
 
-//unsure if used yet
+//carousel wip
 export const getTrending = async () => {
     const url = `${BASE_URL}/trending/all/day?language=en-US`
     const options = {
